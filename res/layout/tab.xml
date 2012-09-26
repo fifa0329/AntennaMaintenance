@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:background="#03488b"
+        android:orientation="vertical" >
+
+<FrameLayout     
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+   
+   
+   
+   
+   
+   <LinearLayout
+     	 android:id="@+id/tab1"
+     	 android:layout_width="fill_parent"
+     	 android:layout_height="550dp"
+     	android:layout_marginTop="10dp"
+         >
+	<TableLayout 
+	      android:layout_width="fill_parent"    
+		  android:layout_height="wrap_content"
+		  android:stretchColumns="1,2"
+		  >
+   <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="70dp" 
+            android:text="Element" 
+            android:gravity="center"/>
+        <TextView
+            android:text="Value"
+            android:gravity="center"/>
+    </TableRow>
+	    	  
+	    
+	  <TableRow> 
+        <TextView
+           
+            android:layout_column="1"
+            android:id="@+id/time"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="70dp" 
+            android:layout_height="wrap_content"   
+            android:text="当前日期"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/time_value" 
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:text="2012-08-22"   
+            android:background="#5b77f9"      
+             />     
+		</TableRow>
+	<TableRow> 
+        <TextView
+            android:layout_column="1"
+            android:id="@+id/cgi"
+            android:layout_marginLeft="5dp"
+             android:layout_marginTop="1dp"
+            android:layout_width="70dp" 
+            android:layout_height="wrap_content"   
+            android:text="全球小区识别码"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/cgi_value" 
+             android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+             android:layout_marginRight="5dp"
+            android:text="460 00 22461 12242"   
+            android:background="#5b77f9"      
+             />     
+	</TableRow>
+	<TableRow> 
+        <TextView
+            android:layout_column="1"
+            android:id="@+id/networkoperatorname"
+             android:layout_marginTop="1dp"
+            android:layout_width="70dp" 
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:text="运营商"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/networkoperatorname_value" 
+             android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+             android:layout_marginRight="5dp"
+            android:text="7"   
+            android:background="#5b77f9"      
+             />     
+	</TableRow>
+		<TableRow> 
+        <TextView
+            android:layout_column="1"
+            android:id="@+id/deviceid"
+             android:layout_marginTop="1dp"
+            android:layout_width="70dp" 
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:text="设备ID"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/deviceid_value" 
+             android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+             android:layout_marginRight="5dp"
+            android:text="7"   
+            android:background="#5b77f9"      
+             />     
+	</TableRow>
+		<TableRow> 
+        <TextView
+            android:layout_column="1"
+            android:id="@+id/networktype"
+             android:layout_marginTop="1dp"
+             android:layout_marginLeft="5dp"
+            android:layout_width="70dp" 
+            android:layout_height="wrap_content"   
+            android:text="网络类型"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/networktype_value" 
+             android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+             android:layout_marginRight="5dp"
+            android:text="9"   
+            android:background="#5b77f9"      
+             />     
+	</TableRow>
+	<TableRow> 
+        <TextView
+            android:layout_column="1"
+            android:id="@+id/phonetype"
+             android:layout_marginTop="1dp"
+            android:layout_width="70dp" 
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:text="手机信号类型"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/phonetype_value" 
+             android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+             android:layout_marginRight="5dp"
+            android:text="TCH/F+FACCH"   
+            android:background="#5b77f9"      
+             />     
+	</TableRow>
+	<TableRow> 
+        <TextView
+            android:layout_column="1"
+            android:id="@+id/signalstrenghth"
+             android:layout_marginTop="1dp"
+             android:layout_marginLeft="5dp"
+            android:layout_width="70dp" 
+            android:layout_height="wrap_content"   
+            android:text="信号强度"
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/signalstrenghth_value" 
+             android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+             android:layout_marginRight="5dp"
+            android:text="11 39 64"   
+            android:background="#5b77f9"      
+             />     
+	</TableRow>
+	       
+	       
+	       <!-- 关于动态图表的显示 -->
+       <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="290dp"
+        android:layout_height="122dp"
+        android:layout_x="12dp"
+        android:layout_y="41dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>   	
+   </TableLayout>    
+       
+	 	
+</LinearLayout>      
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+   
+	<LinearLayout
+	    android:id="@+id/tab2"
+		android:layout_width="fill_parent"
+		android:layout_height="228dp"
+		android:background="#03488b" >
+	<RelativeLayout 
+	        android:orientation="vertical" 
+	        android:layout_width="fill_parent"
+  			 android:layout_height="wrap_content">
+
+   		<TextView 
+   		    android:id="@+id/tv_station"
+   		    android:layout_width="fill_parent"
+      		android:layout_height="50dp" 
+			android:layout_alignParentTop="true" 
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="5dp"
+      		android:background="@drawable/coners_bg"
+      		android:text=" 基站地址"
+      		android:gravity="center_vertical"
+      		android:textColor="#000000"
+      		android:textSize="16dp">   		    
+   		</TextView>
+   		<EditText 
+   		    android:id="@+id/tv_stationValue"
+   		    android:layout_width="230dp"
+      		android:layout_height="40dp" 
+ 			android:layout_alignParentTop="true" 
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:hint="点击我以编辑基站地址"
+      		android:background="@drawable/coners_bg1">   		    
+   		</EditText>
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		<TextView 
+   		    android:id="@+id/tv_tower"
+   		    android:layout_width="fill_parent"
+      		android:layout_height="50dp" 
+			android:layout_below="@+id/tv_station"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="5dp"
+      		android:background="@drawable/coners_bg"
+      		android:text=" 建塔时间"
+      		android:gravity="center_vertical"
+      		android:textColor="#000000"
+      		android:textSize="16dp">   		    
+   		</TextView>
+   		
+   		
+   		
+   		
+   		<EditText 
+   		    android:id="@+id/tv_towerValue"
+   		    android:layout_width="230dp"
+      		android:layout_height="40dp" 
+      		android:layout_alignRight="@+id/tv_station"
+ 			android:layout_below="@+id/tv_station"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="10dp"
+			android:hint="点击我以编辑建塔时间"
+      		android:background="@drawable/coners_bg1">   		    
+   		</EditText>
+ 		
+ 		
+ 		
+ 		<TextView 
+   		    android:id="@+id/tv_factory"
+   		    android:layout_width="fill_parent"
+      		android:layout_height="50dp" 
+			android:layout_below="@+id/tv_tower"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="5dp"
+      		android:background="@drawable/coners_bg"
+      		android:text=" 铁塔厂家"
+      		android:gravity="center_vertical"
+      		android:textColor="#000000"
+      		android:textSize="16dp">   		    
+   		</TextView>
+   		<EditText 
+   		    android:id="@+id/tv_factoryValue"
+   		    android:layout_width="230dp"
+      		android:layout_height="40dp" 
+      		android:layout_alignRight="@+id/tv_tower"
+ 			android:layout_below="@+id/tv_tower"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="10dp"
+			android:hint="点击我以编辑铁塔厂家"
+      		android:background="@drawable/coners_bg1">   		    
+   		</EditText>
+   		
+   		
+   		
+   		
+   		
+   		
+   		<TextView 
+   		    android:id="@+id/tv_towerType"
+   		    android:layout_width="fill_parent"
+      		android:layout_height="50dp" 
+			android:layout_below="@+id/tv_factory"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="5dp"
+      		android:background="@drawable/coners_bg"
+      		android:text=" 铁塔类型"
+      		android:gravity="center_vertical"
+      		android:textColor="#000000"
+      		android:textSize="16dp">   		    
+   		</TextView>
+   		<Spinner 
+   		    android:id="@+id/tv_towerTypeValue"
+   		    android:layout_width="230dp"
+      		android:layout_height="40dp" 
+      		android:layout_alignRight="@+id/tv_factory"
+ 			android:layout_below="@+id/tv_factory"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="10dp"
+      		android:background="@drawable/coners_bg1">   		    
+   		</Spinner> 		
+	  </RelativeLayout>
+	</LinearLayout>	
+	    
+	    
+	    
+	    
+	    
+	    
+	   
+	
+	
+	
+	
+   
+   
+   
+   
+	
+	
+	
+	
+   <LinearLayout
+     	 android:id="@+id/tab3"
+     	 android:layout_width="fill_parent"
+     	 android:layout_height="550dp"
+     	android:layout_marginTop="10dp"
+         >
+	
+	
+	
+	
+	<TableLayout 
+	      android:layout_width="fill_parent"    
+		  android:layout_height="wrap_content"
+		  android:stretchColumns="0,1,2,3"
+		  >
+   <TableRow>
+        <TextView
+            android:text="邻区名" 
+            android:gravity="center"/>
+        <TextView
+            android:text="LAC"
+            android:gravity="center"/>
+        <TextView
+            android:text="CI"
+            android:gravity="center"/>
+        <TextView
+            android:text="信号强度"
+            android:gravity="center"/>
+    </TableRow>
+
+   	    	  
+	    
+	  
+	  <TableRow> 
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:layout_width="wrap_content"
+            android:text="邻区1"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/lac1"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />
+        <TextView
+            android:id="@+id/ci1"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"    
+            android:background="#5b87f9" 
+            />      
+        <TextView
+            android:id="@+id/strength1"    
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />       
+		</TableRow>
+		
+	  
+	  
+	  	  <TableRow> 
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:layout_width="wrap_content"
+            android:text="邻区2"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/lac2"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />
+        <TextView
+            android:id="@+id/ci2"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"    
+            android:background="#5b87f9" 
+            />      
+        <TextView
+            android:id="@+id/strength2"    
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />       
+		</TableRow>
+		
+	  	  
+	  	  
+	  	  	  <TableRow> 
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:layout_width="wrap_content"
+            android:text="邻区3"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/lac3"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />
+        <TextView
+            android:id="@+id/ci3"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"    
+            android:background="#5b87f9" 
+            />      
+        <TextView
+            android:id="@+id/strength3"    
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />       
+		</TableRow>	  
+		
+		
+		<TableRow> 
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:layout_width="wrap_content"
+            android:text="邻区4"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/lac4"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />
+        <TextView
+            android:id="@+id/ci4"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"    
+            android:background="#5b87f9" 
+            />      
+        <TextView
+            android:id="@+id/strength4"    
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />       
+		</TableRow>
+		
+	  <TableRow> 
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:layout_width="wrap_content"
+            android:text="邻区5"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/lac5"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />
+        <TextView
+            android:id="@+id/ci5"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"    
+            android:background="#5b87f9" 
+            />      
+        <TextView
+            android:id="@+id/strength5"    
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />       
+		</TableRow>	  
+		
+		<TableRow> 
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"   
+            android:layout_width="wrap_content"
+            android:text="邻区6"  
+            android:background="#5b87f9" 
+            />      
+        <TextView    
+            android:id="@+id/lac6"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />
+        <TextView
+            android:id="@+id/ci6"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"    
+            android:background="#5b87f9" 
+            />      
+        <TextView
+            android:id="@+id/strength6"    
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"  
+            android:background="#5b77f9"      
+             />       
+		</TableRow>
+		
+		
+		
+			<LinearLayout
+	    android:orientation="horizontal"
+	    android:id="@+id/configLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="200dp"
+  	>
+	</LinearLayout>
+
+	</TableLayout>
+		
+
+					
+
+  		
+
+	
+
+	</LinearLayout>
+
+				
+</FrameLayout>    
+
+	<RelativeLayout 
+     	android:layout_width="fill_parent"
+     	android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+	
+		<TextView
+    	android:id="@+id/basestation_picture"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_marginBottom="5dp"
+    	android:background="@drawable/coners_bg"
+    	android:gravity="top"
+    	android:textColor="#000000"
+    	android:textSize="16dp"
+    	android:text=" 基站图片" />
+    		
+   		 <ImageView
+    	android:id="@+id/imageView"
+    	android:src="@drawable/nobody"
+    	android:scaleType="fitXY"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:layout_marginTop="25dp"
+    	android:layout_marginBottom="25dp"
+    	android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"/>	
+    	
+	</RelativeLayout> 
+
+</LinearLayout>

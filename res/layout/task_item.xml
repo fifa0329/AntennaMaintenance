@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+    
+    <TextView
+        android:id="@+id/station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <TextView
+        android:id="@+id/extended_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dip" 
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+
+	
+</LinearLayout>
+<!-- 这个文件用于某某基站，该基站内含有多少天线 -->

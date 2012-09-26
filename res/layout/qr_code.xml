@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/widget38"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/rootblock_default_bg"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+	android:id="@+id/show"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="您可以单击下面的按钮，即可启动条形码扫描器进行扫描，扫描后的结果会显示出来" />
+<Button
+	android:id="@+id/scan"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="开始进行条形码扫描" />
+</LinearLayout>

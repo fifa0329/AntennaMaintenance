@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical" 
+        >
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#04478B"
+    android:textColor="#FFFFFF"
+    android:ems="10"
+    android:gravity="center"
+    android:text="故障列表"
+    android:textSize="40sp" />
+    
+    <ExpandableListView  
+	android:id="@+id/expandList"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:cacheColorHint="#00000000" 
+    
+    />    
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+        android:layout_weight="1"
+	    >
+
+		<Button
+		    android:id="@+id/add_new_error"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:text="增加新故障"
+		    android:textSize="20sp" 
+		    android:textColor="#FFFFFF"
+		    android:background="#FF0000"/>
+
+	</LinearLayout>
+</LinearLayout>
