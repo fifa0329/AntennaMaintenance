@@ -86,8 +86,7 @@ public class TabDemoActivity extends TabActivity {
 	private EditText tv_factoryValue=null;
 	
 	
-	
-	
+		
 	
 //	¶¯Ì¬XYÍ¼
 	private Timer timer = new Timer();

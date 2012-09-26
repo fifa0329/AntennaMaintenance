@@ -43,10 +43,8 @@
 		    android:id="@+id/add_new_error"
 		    android:layout_width="fill_parent"
 		    android:layout_height="fill_parent"
-		    android:text="增加新故障"
-		    android:textSize="20sp" 
 		    android:textColor="#FFFFFF"
-		    android:background="@color/red"/>
+		    android:background="@drawable/add_error_selector"/>
 
 	</LinearLayout>
 </LinearLayout>

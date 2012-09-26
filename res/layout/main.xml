@@ -25,7 +25,7 @@
                 android:layout_weight="1" 
                 android:layout_height="155dp"
                 android:layout_marginLeft="5dp"
-                android:background="@drawable/station"/>
+                android:background="@drawable/button_selector11"/>
             <TextView 
                 android:id="@+id/TextView_AtenaWrite"
                 android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
                 android:layout_height="155dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/atenawrite"/>
+                android:background="@drawable/button_selector12"/>
           
         </TableRow>
          <TableRow 
@@ -48,7 +48,7 @@
                 android:layout_weight="1" 
                 android:layout_height="155dp"
                 android:layout_marginLeft="5dp"
-                android:background="@drawable/failure"/>
+                android:background="@drawable/button_selector21"/>
             <TextView 
                 android:id="@+id/TextView_AtenaShow"
                 android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
                 android:layout_height="155dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/atenashow"/>
+                android:background="@drawable/button_selector22"/>
         </TableRow>
         
         <TableRow 
@@ -73,12 +73,13 @@
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/more"/>
            <TextView 
-                android:id="@+id/TextView_no"
+                android:id="@+id/TextView_Upload"
                 android:layout_width="wrap_content"
                 android:layout_weight="1" 
                 android:layout_height="155dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="5dp"
+                android:background="@drawable/button_selector32"
                 />
           
         </TableRow>

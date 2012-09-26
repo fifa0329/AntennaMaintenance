@@ -67,7 +67,7 @@
         android:layout_below="@+id/description"
         android:layout_marginRight="15dp"
         android:scaleType="fitStart"
-        android:src="@drawable/rootblock_icon_set_bg" />
+        android:src="@drawable/empty" />
 
     <ImageView
         android:id="@+id/ImageView01"
@@ -76,7 +76,7 @@
         android:layout_below="@+id/description"
         android:layout_marginRight="15dp"
         android:layout_toLeftOf="@+id/imageView1"
-        android:src="@drawable/rootblock_icon_set_bg" />
+        android:src="@drawable/edit" />
 
     <ImageView
         android:id="@+id/takepictureup"
@@ -85,7 +85,7 @@
         android:layout_alignTop="@+id/ImageView01"
         android:layout_marginRight="20dp"
         android:layout_toLeftOf="@+id/ImageView01"
-        android:src="@drawable/rootblock_icon_set_bg" />
+        android:src="@drawable/camera" />
 
     <ImageView
         android:id="@+id/error_photo_before"
@@ -151,7 +151,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/completion"
         android:layout_marginRight="15dp"
-        android:src="@drawable/rootblock_icon_set_bg" />
+        android:src="@drawable/empty" />
 
     <ImageView
         android:id="@+id/ImageView04"
@@ -160,7 +160,7 @@
         android:layout_below="@+id/completion"
         android:layout_marginRight="15dp"
         android:layout_toLeftOf="@+id/ImageView03"
-        android:src="@drawable/rootblock_icon_set_bg" />
+        android:src="@drawable/edit" />
 
     <ImageView
         android:id="@+id/takepicturedown"
@@ -169,7 +169,7 @@
         android:layout_below="@+id/completion"
         android:layout_marginRight="20dp"
         android:layout_toLeftOf="@+id/ImageView04"
-        android:src="@drawable/rootblock_icon_set_bg" />
+        android:src="@drawable/camera" />
 </RelativeLayout>
 
 </RelativeLayout>
