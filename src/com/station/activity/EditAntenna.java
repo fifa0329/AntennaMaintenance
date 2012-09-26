@@ -33,8 +33,8 @@ public class EditAntenna extends Activity {
 	private Bitmap bm;
 	
     public void onCreate(Bundle savedInstanceState) {
-    	requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//    	requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_antenna);
         setTitle("具体天线信息");
