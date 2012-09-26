@@ -46,7 +46,7 @@
 		    android:text="增加新故障"
 		    android:textSize="20sp" 
 		    android:textColor="#FFFFFF"
-		    android:background="#FF0000"/>
+		    android:background="@color/red"/>
 
 	</LinearLayout>
 </LinearLayout>
