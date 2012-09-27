@@ -79,11 +79,11 @@ public final class IntentIntegrator {
 
   public static final int REQUEST_CODE = 0x0ba7c0de; // get it?
 
-  public static final String DEFAULT_TITLE = "Install Barcode Scanner?";
+  public static final String DEFAULT_TITLE = "您安装Barcode Scanner了吗?";
   public static final String DEFAULT_MESSAGE =
-      "This application requires Barcode Scanner. Would you like to install it?";
-  public static final String DEFAULT_YES = "Yes";
-  public static final String DEFAULT_NO = "No";
+      "此功能的实现需要用到Barcode Scanner，请将随包附赠的Barcode Scanner.apk安装后再次运行，谢谢！";
+  public static final String DEFAULT_YES = "下载";
+  public static final String DEFAULT_NO = "取消";
 
   // supported barcode formats
   public static final String PRODUCT_CODE_TYPES = "UPC_A,UPC_E,EAN_8,EAN_13";

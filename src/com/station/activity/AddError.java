@@ -23,6 +23,7 @@ import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AddError extends Activity {
 	
@@ -36,6 +37,10 @@ public class AddError extends Activity {
 	private Bitmap bm;
 	private ImageView error_photo_before=null;
 	private ImageView error_photo_after=null;
+	private ImageView empty_up=null;
+	private ImageView empty_down=null;
+	private ImageView edit_up=null;
+	private ImageView edit_down=null;
 	private EditText description=null;
 	private EditText completion=null;
 
@@ -53,6 +58,11 @@ public class AddError extends Activity {
     	completion=(EditText)findViewById(R.id.completion);
     	ImageView takepictureup=(ImageView)findViewById(R.id.takepictureup);
     	ImageView takepicturedown=(ImageView)findViewById(R.id.takepicturedown);
+    	empty_up=(ImageView)findViewById(R.id.empty_up);
+    	empty_down=(ImageView)findViewById(R.id.empty_down);
+    	edit_up=(ImageView)findViewById(R.id.edit_up);
+    	edit_down=(ImageView)findViewById(R.id.edit_down);
+    	
     	
     	description.setText(errortype);
     	
@@ -80,7 +90,43 @@ public class AddError extends Activity {
 			});
     	
     	
+    	empty_up.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				description.setText("");
+			}
+		});
     	
+    	
+    	empty_down.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				completion.setText("");
+			}
+		});
+    	
+    	
+    	edit_up.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Toast toast=Toast.makeText(AddError.this, "我不知道这是干嘛用的", Toast.LENGTH_SHORT);
+				toast.show();
+			}
+		});
+    	
+    	
+    	
+    	edit_down.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Toast toast=Toast.makeText(AddError.this, "我不知道这是干嘛用的", Toast.LENGTH_SHORT);
+				toast.show();
+			}
+		});
     	
     	
     	

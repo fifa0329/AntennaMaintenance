@@ -60,7 +60,7 @@
         android:textSize="30sp" />
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/empty_up"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentRight="true"
@@ -70,21 +70,21 @@
         android:src="@drawable/empty" />
 
     <ImageView
-        android:id="@+id/ImageView01"
+        android:id="@+id/edit_up"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/description"
         android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/imageView1"
+        android:layout_toLeftOf="@+id/empty_up"
         android:src="@drawable/edit" />
 
     <ImageView
         android:id="@+id/takepictureup"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignTop="@+id/ImageView01"
+        android:layout_alignTop="@+id/edit_up"
         android:layout_marginRight="20dp"
-        android:layout_toLeftOf="@+id/ImageView01"
+        android:layout_toLeftOf="@+id/edit_up"
         android:src="@drawable/camera" />
 
     <ImageView
@@ -138,14 +138,13 @@
         android:layout_width="195dp"
         android:layout_height="150dp"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/widget56"
         android:layout_below="@+id/widget58"
         android:ems="10"
         android:hint="请输入故障解决情况"
         android:textSize="18sp" />
 
     <ImageView
-        android:id="@+id/ImageView03"
+        android:id="@+id/empty_down"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentRight="true"
@@ -154,12 +153,12 @@
         android:src="@drawable/empty" />
 
     <ImageView
-        android:id="@+id/ImageView04"
+        android:id="@+id/edit_down"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/completion"
         android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/ImageView03"
+        android:layout_toLeftOf="@+id/empty_down"
         android:src="@drawable/edit" />
 
     <ImageView
@@ -168,7 +167,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/completion"
         android:layout_marginRight="20dp"
-        android:layout_toLeftOf="@+id/ImageView04"
+        android:layout_toLeftOf="@+id/edit_down"
         android:src="@drawable/camera" />
 </RelativeLayout>
 

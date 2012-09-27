@@ -3,23 +3,40 @@ package com.station.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class QRcode extends Activity {
+	private TextView tvTitle;
+	private Button btnBack;
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		setTheme(R.style.MyCustomTheme);
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 		setContentView(R.layout.qr_code);
-		setTitle("条形码扫描模块");
-		Button button = (Button) this.findViewById(R.id.scan);
-		button.setOnClickListener(new OnClickListener() {
+		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title);
+		tvTitle = (TextView) findViewById(R.id.Titletext);
+		tvTitle.setText("条形码扫描");
+
+		btnBack = (Button) findViewById(R.id.TitleBackBtn);
+
+		btnBack.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				finish();
+			}
+		});
+
+
+		TextView scan = (TextView) this.findViewById(R.id.scan);
+		scan.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				IntentIntegrator.initiateScan(QRcode.this);
 			}

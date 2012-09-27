@@ -8,12 +8,25 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 <TextView
 	android:id="@+id/show"
-	android:layout_width="wrap_content"
+	android:layout_width="fill_parent"
 	android:layout_height="wrap_content"
+	android:background="#FFFFFF"
+	android:textColor="#000000"
 	android:text="您可以单击下面的按钮，即可启动条形码扫描器进行扫描，扫描后的结果会显示出来" />
-<Button
-	android:id="@+id/scan"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="开始进行条形码扫描" />
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/scan_selector" />
+</RelativeLayout>
+
 </LinearLayout>
