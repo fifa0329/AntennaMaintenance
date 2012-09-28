@@ -2,6 +2,6 @@
 <resources>
 
     <string name="hello">Hello World, mainActivity!</string>
-    <string name="app_name">Station</string>
+    <string name="app_name">东方世纪基站代维</string>
 
 </resources>
