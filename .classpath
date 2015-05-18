@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/wlx/Desktop/achartengine-1.0.0-demo-source/lib/achartengine-1.0.0.jar" sourcepath="C:/Users/wlx/Desktop/achartengine-1.0.0-demo-source/lib/achartengine-1.0.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="F:/Code/javaworkspace/东方世纪/com.enice.antennamaintenance/lib/achartengine-1.0.0.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

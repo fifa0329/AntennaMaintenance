@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,7 @@ public class GetStation extends ListActivity {
 		setContentView(R.layout.get_station);
 		setTitle("当前获取的基站");
 		parseStationInfo(DatabaseHelper.getStationList());
+		Log.v("body", DatabaseHelper.getStationList().toString());
 		setListAdapter(new StationListAdapter());
 		// 此句代码结束后形成了按了新建任务之后的界面，包括一个LACCI来的基站和小葛给的三个随机的基站
 		// Toast
@@ -52,6 +54,7 @@ public class GetStation extends ListActivity {
 					.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document dom = builder.parse(new ByteArrayInputStream(body));
+			Log.v("body", body.toString());
 			Element root = dom.getDocumentElement();
 			if (root.getTagName().equals("station_info")) {
 				NodeList stationNodeList = root.getElementsByTagName("station");
